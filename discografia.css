@@ -1,0 +1,142 @@
+/*body { background-image: url("fotos/trama_fondo.jpg");
+	   background-color: black;
+       font-family: : arial;}
+
+h1,h2{ color: white;}
+
+ul,ol li {color: white;}*/
+
+body { background-image: url("fotos/trama_fondo.jpg");
+	   background-color: black;
+       font-family: : arial;
+       }
+
+
+
+h2{ color: #C1F5F0;
+        text-align: center; }
+
+
+p{ color:#FC77F0; }
+
+
+.banner { display: inline-block;
+	      width:33%;
+	      vertical-align: top;
+}
+  
+
+
+/* barra de navegación*/
+
+nav {padding-right: 100px;}
+nav ul { text-align: center;
+	     list-style: none;
+         
+         }
+
+
+nav a{ text-decoration: none;
+       color:white;
+       font-size: large;
+       font-weight: bolder;}
+
+nav a:hover{color:#3D0738;}
+
+nav a:active{color:##3D0738;}
+
+
+
+.navi { width:15%;
+        height: 25px;
+        padding-top: 10px;
+        margin-left: 25px;	
+	    background:linear-gradient(to top, black, #564E4D);
+	    display:inline-block;
+	    text-align: center;
+        transition: ease all 0,2s;
+	   
+
+
+
+	    }
+
+.navi:hover{ background:linear-gradient(to top, #C00994, #B776A7);
+	         color: white;
+	         box-shadow: inset 0 0 0 3px #C1F5F0;
+             transform: scale(0.9);
+
+
+}
+ 
+.navi a { display:block; }
+
+
+
+	     
+.disco { display:none;
+         position: absolute;
+         width: 85px;
+         background-color: #3D0738;
+         text-decoration: none;
+         z-index: 1200
+
+         }
+.disco a:hover{color:white;
+               background:linear-gradient(to top, #C00994, #B776A7); }
+
+.disco a:active{color:black;}
+
+.disco li {
+            margin-left: -35px;
+            margin-top: 5px;
+            text-align: left;
+             }
+
+
+
+
+ul .navi:hover .disco {display:block;}
+          
+.tours { display:none;
+         position: absolute;
+         width: 85px;
+         background-color: #3D0738;
+         text-decoration: none;
+         z-index: 1200
+
+         }
+
+.tours li {
+            margin-left: -35px;
+            margin-top: 5px;
+            text-align: left;
+             }
+
+.tours a:hover{color:white;
+               background:linear-gradient(to top, #C00994, #B776A7); }
+
+.tours a:active{color:black;}
+
+
+ul .navi:hover .tours {display:block;}
+
+/* contenido*/ 
+
+main { margin-top: 150px ;
+	    padding-left: 200px;
+        }
+
+main ul,ol li {color: white;} 
+/* footer */ 
+
+footer {/*width:80%;*/
+	      height: 20px;
+        background-color:#564E4D;
+         }
+
+
+
+footer a { text-decoration: none; }
+
+footer li{display:inline-block;} 
