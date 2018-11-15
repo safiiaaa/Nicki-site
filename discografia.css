@@ -19,6 +19,26 @@ h2{ color: #C1F5F0;
 
 p{ color:#FC77F0; }
 
+/* botón búsqueda*/
+
+.busq input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url('fotos/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.busq input[type=text]:focus {
+    width: 50%;
+}
 
 .banner { display: inline-block;
 	      width:33%;

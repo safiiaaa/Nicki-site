@@ -11,12 +11,34 @@ h2{ color: #C1F5F0;
 
 p{ color:#FC77F0; }
 
-header {/*background-color:blue;*/
-       }
 
+/* botón búsqueda*/
+
+.busq input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: #C1F5F0;
+    background-image: url('fotos/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.busq input[type=text]:focus {
+    width: 50%;
+}
+
+.busq input [type=button] {
+
+}
 .banner { display: inline-block;
-	      width:33%;
-	      vertical-align: top;
+          width:33%;
+          vertical-align: top;
 }
   
 
@@ -45,10 +67,11 @@ nav a:active{color:##3D0738;}
         height: 25px;
         padding-top: 10px;
         margin-left: 25px;	
+        border-radius: 25px;
 	    background:linear-gradient(to top, #3D0738, black);
 	    display:inline-block;
 	    text-align: center;
-        transition: ease all 0,2s;
+        transition: ease all 0.2s;
 	   
 
 
@@ -142,8 +165,7 @@ article{
 /* barra de noticias*/
 
 
-#noticias{ /*background-color: red;*/ 
-           margin-top:100px;}
+#noticias{ margin-top:100px;}
 
 #listanews { padding-right: 85px;}
 
@@ -172,7 +194,7 @@ article{
 /*footer*/
 
 footer {/*width:80%;*/
-	      height: 20px;
+	      height: 40px;
         background-color:#3D0738;
          }
 

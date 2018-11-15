@@ -1,4 +1,4 @@
-body { background-image: url("fotos/trama_fondo3.jpg");
+body { background-image: url("fotos/trama_fondo4.jpg");
        background-color: black;
        font-family: : arial;
        }
@@ -20,7 +20,7 @@ p{ color:#FC77F0; }
     border: 1px solid #ccc;
     border-radius: 25px;
     font-size: 14px;
-    background-color: #C1F5F0;
+    background-color: white;
     background-image: url('fotos/search.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ nav a:active{color:##3D0738;}
         height: 25px;
         padding-top: 10px;
         margin-left: 25px;  
-        background:linear-gradient(to top, #42FAF1, #F6B1F9);
+        background:linear-gradient(to top, #AF0317, #A37804);
         display:inline-block;
         text-align: center;
         transition: ease all 0.2s;
@@ -136,29 +136,3 @@ ul .navi:hover .disco {display:block;}
 
 
 ul .navi:hover .tours {display:block;}
-
-/*contenido*/
-
-main { margin-top: 150px; }
-
-#personal{ margin-left: 500px; }
-
-#genero  { margin-left: 605px; }
-
-#comenta { margin-left: 180px; }
-        
-        
-
-
-/*footer*/
-
-footer {/*width:80%;*/
-        height: 20px;
-        background-color:#42FAF1;
-         }
-
-
-
-footer a { text-decoration: none; }
-
-footer li{display:inline-block;}         
