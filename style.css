@@ -1,6 +1,8 @@
 body { background-image: url("fotos/trama_fondo2.jpg");
 	   background-color: black;
        font-family: : arial;
+       display: block;
+       width: 100%;
        }
 
 
@@ -9,7 +11,8 @@ h2{ color: #C1F5F0;
         text-align: center; }
 
 
-p{ color:#FC77F0; }
+p{ color:#FC77F0;
+   font-size: 20px; }
 
 
 /* botón búsqueda*/
@@ -30,17 +33,18 @@ p{ color:#FC77F0; }
 }
 
 .busq input[type=text]:focus {
-    width: 50%;
+    width: 15%;
 }
 
-.busq input [type=button] {
 
-}
-.banner { display: inline-block;
+.banner1 { 
+          display: inline-block;
+          width:66%;
+          text-align: right;
+          }
+.banner2 { display: inline-block;
           width:33%;
-          vertical-align: top;
-}
-  
+          vertical-align: top; } 
 
 
 /* barra de navegación*/
@@ -167,22 +171,32 @@ article{
 
 #noticias{ margin-top:100px;}
 
-#listanews { padding-right: 85px;}
+#listanews { padding-right: 40px;}
 
-.news { width:15%;
-	    margin-left: 45px;
+.news { width:calc(20% - 25px);
+	      margin-left: 20px;
         background-color: #3E263C;
         display: inline-block;
         vertical-align: top;
-        height: 300px; }
+        min-height: 300px; }
 
-.news a {color: black;
+.news a {color: #C1F5F0;
+         min-height: 140px;
+         font-size: 24px;
          display: block;
+         font-weight: bolder;
          text-decoration: none
          ;}
 
-.news h3 { min-height: 140px; 
-           color: #C1F5F0;}
+
+.headline { background-color: #3D0738; }
+
+.fotonews { background-color: #3D0738;
+            margin: auto; }
+
+/*.news h3 { min-height: 140px; 
+           color: #C1F5F0;}*/
+
 
 
 
@@ -193,8 +207,8 @@ article{
 
 /*footer*/
 
-footer {/*width:80%;*/
-	      height: 40px;
+footer {width:100%;
+	      min-height: 40px;
         background-color:#3D0738;
          }
 
@@ -202,4 +216,55 @@ footer {/*width:80%;*/
 
 footer a { text-decoration: none; }
 
-footer li{display:inline-block;}         
+footer li{display:inline-block;} 
+
+
+/*mobile*/
+
+
+@media only screen and (max-width: 500px) 
+{
+
+#banner {
+          display: flex;
+          flex-flow:column;
+        }
+.banner1, .banner2 { 
+                width: 90%; 
+              }
+
+.banner2 { margin-left: 45px; }
+
+
+
+#historia { display: flex;
+          flex-flow: column;
+          padding-left: 2px;}
+
+.hist1, .hist2 { 
+                width: 100%; 
+                display: block;
+              }
+
+
+#listanews{ display: flex;
+            flex-wrap: wrap;
+            flex-flow: column; }
+
+
+
+.news { width:100%;
+        margin-top: 15px;
+        
+         }
+
+}
+
+
+@media only screen and (max-width: 1024px) 
+
+
+
+
+
+
