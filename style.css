@@ -39,8 +39,9 @@ p{ color:#FC77F0;
 
 .banner1 { 
           display: inline-block;
-          width:66%;
-          text-align: right;
+          width:60%;
+          text-align:right;
+          padding-right: 80px;
           }
 .banner2 { display: inline-block;
           width:33%;
@@ -186,7 +187,8 @@ article{
          display: block;
          font-weight: bolder;
          text-decoration: none
-         ;}
+         ;
+         padding-top: 25px;}
 
 
 .headline { background-color: #3D0738; }
@@ -210,7 +212,7 @@ article{
 footer {width:100%;
 	      min-height: 40px;
         background-color:#3D0738;
-         }
+        }
 
 
 
@@ -218,12 +220,23 @@ footer a { text-decoration: none; }
 
 footer li{display:inline-block;} 
 
+footer i {font-size:35px;
+          color:grey;
+          margin-right: 10px;
+          padding-top: 10px , 0px;}
+
 
 /*mobile*/
 
 
 @media only screen and (max-width: 500px) 
 {
+
+img {width:100%;}
+
+.busq input[type=text]:focus {
+    width: 45%;
+}
 
 #banner {
           display: flex;
@@ -235,7 +248,7 @@ footer li{display:inline-block;}
 
 .banner2 { margin-left: 45px; }
 
-
+/*main*/
 
 #historia { display: flex;
           flex-flow: column;
@@ -245,6 +258,9 @@ footer li{display:inline-block;}
                 width: 100%; 
                 display: block;
               }
+
+
+
 
 
 #listanews{ display: flex;
@@ -257,6 +273,7 @@ footer li{display:inline-block;}
         margin-top: 15px;
         
          }
+
 
 }
 
