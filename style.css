@@ -1,18 +1,36 @@
 body { background-image: url("fotos/trama_fondo2.jpg");
-	   background-color: black;
+	     background-color: black;
+       font-family: : arial;
+       display: block;
+       width: 100%;
+       }
+
+.discog { background-image: url("fotos/trama_fondo.jpg");
+          background-color: black;
+          font-family: : arial;
+          display: block;
+          width: 100%;
+       }
+.tour_banner { background-image: url("fotos/trama_fondo4.jpg");
+       background-color: black;
        font-family: : arial;
        display: block;
        width: 100%;
        }
 
 
+h2 { color: #C1F5F0;
+    text-align: center;
+    font-family: arial;
+    font-size:20px;}
 
-h2{ color: #C1F5F0;
-        text-align: center; }
+p { color:#FC77F0;
+   font-size: 20px;
+   font-family: arial; }
 
-
-p{ color:#FC77F0;
-   font-size: 20px; }
+a { font-family: arial;
+    font-size: 20px;
+     }
 
 
 /* botón búsqueda*/
@@ -50,7 +68,8 @@ p{ color:#FC77F0;
 
 /* barra de navegación*/
 
-nav {padding-right: 100px;}
+nav {padding-right: 100px;
+box-sizing: content-box;}
 nav ul { text-align: center;
 	     list-style: none;
          
@@ -69,14 +88,14 @@ nav a:active{color:##3D0738;}
 
 
 .navi { width:15%;
-        height: 25px;
         padding-top: 10px;
         margin-left: 25px;	
         border-radius: 25px;
-	    background:linear-gradient(to top, #3D0738, black);
-	    display:inline-block;
-	    text-align: center;
+	      background:linear-gradient(to top, #3D0738, black);
+	      display:inline-block;
+	      text-align: center;
         transition: ease all 0.2s;
+        padding-bottom: 7px;
 	   
 
 
@@ -196,15 +215,140 @@ article{
 .fotonews { background-color: #3D0738;
             margin: auto; }
 
-/*.news h3 { min-height: 140px; 
-           color: #C1F5F0;}*/
+/*discogrfia*/
+
+.disco_content { margin-top: 150px ;
+      padding-left: 200px;
+        }
+
+.disco_content ul,ol li {color: white;}
 
 
 
+/*Tours*/
+ 
+.tpais { display: flex;
+         flex-flow: row;
+         flex-wrap: wrap;
+         justify-content: space-between;}
+
+.tgaleria{
+          width:25%;
+          
+          
+          }
+
+.tgaleria a {
+         text-decoration: none;
+         font-size: 40px;
+         color: black;
+         line-height: 400px;
+         display: none;
+            }
+
+.tgaleria:hover a { color: white; 
+                   display: block;
+                   font-weight: bolder; 
+                  }
+
+
+.lax { background-image: url("fotos/los_angeles.jpg") ;
+       background-size: cover;
+       min-height: 300px;
+
+       }
+
+
+.newy { background-image: url("fotos/ny.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
 
 
 
+.tex { background-image: url("fotos/houston.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
 
+
+
+.flori { background-image: url("fotos/miami.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+
+.tok { background-image: url("fotos/tokio.png") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+
+.shg { background-image: url("fotos/shangai.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+.seu { background-image: url("fotos/seul.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+
+.sng { background-image: url("fotos/singapur.jpeg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+.brl { background-image: url("fotos/berlin.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+
+.ams { background-image: url("fotos/amsterdam.jpeg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+.barc { background-image: url("fotos/barcelona.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+.par { background-image: url("fotos/paris.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+.mad { background-image: url("fotos/madrid.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+.edim { background-image: url("fotos/edimburgo.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+.lon { background-image: url("fotos/londres.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+.rom { background-image: url("fotos/roma.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+
+.med { background-image: url("fotos/medellin.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+
+.bsas { background-image: url("fotos/buenos.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+
+.rio { background-image: url("fotos/rio.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
+
+.san { background-image: url("fotos/santiago.jpg") ;
+       background-size: cover;
+       min-height: 400px;
+       }
 
 
 /*footer*/

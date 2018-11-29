@@ -6,9 +6,8 @@ h1,h2{ color: white;}
 
 ul,ol li {color: white;}*/
 
-body { background-image: url("fotos/trama_fondo.jpg");
+.disco { background-image: url("fotos/trama_fondo.jpg");
 	   background-color: black;
-       font-family: : arial;
        }
 
 
@@ -143,11 +142,11 @@ ul .navi:hover .tours {display:block;}
 
 /* contenido*/ 
 
-main { margin-top: 150px ;
+.disco_content { margin-top: 150px ;
 	    padding-left: 200px;
         }
 
-main ul,ol li {color: white;} 
+.disco_content ul,ol li {color: white;} 
 /* footer */ 
 
 footer {/*width:80%;*/
