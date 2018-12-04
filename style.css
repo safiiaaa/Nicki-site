@@ -1,30 +1,31 @@
-body { background-image: url("fotos/trama_fondo2.jpg");
-	     background-color: black;
+body { /*background-image: url("fotos/trama_fondo2.jpg");*/
+	     background-color: #FAFBAC;
        font-family: : arial;
        display: block;
        width: 100%;
        }
 
-.discog { background-image: url("fotos/trama_fondo.jpg");
+.discog { /*background-image: url("fotos/trama_fondo.jpg");*/
           background-color: black;
           font-family: : arial;
           display: block;
           width: 100%;
        }
-.tour_banner { background-image: url("fotos/trama_fondo4.jpg");
-       background-color: black;
+.tour_banner { 
+       background-color: #2A2D88;
        font-family: : arial;
        display: block;
        width: 100%;
        }
 
 
-h2 { color: #C1F5F0;
+h2 { color: #5157CE;
     text-align: center;
     font-family: arial;
-    font-size:20px;}
+    font-size:20px;
+    font-weight: bold;}
 
-p { color:#FC77F0;
+p { color:#5157CE;
    font-size: 20px;
    font-family: arial; }
 
@@ -35,139 +36,34 @@ a { font-family: arial;
 
 /* botón búsqueda*/
 
-.busq input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    font-size: 14px;
-    background-color: #C1F5F0;
-    background-image: url('fotos/search.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-.busq input[type=text]:focus {
-    width: 15%;
-}
-
-
-.banner1 { 
-          display: inline-block;
-          width:60%;
-          text-align:right;
-          padding-right: 80px;
-          }
-.banner2 { display: inline-block;
-          width:33%;
-          vertical-align: top; } 
-
-
-/* barra de navegación*/
-
-nav {padding-right: 100px;
-box-sizing: content-box;}
-nav ul { text-align: center;
-	     list-style: none;
-         
-         }
-
-
-nav a{ text-decoration: none;
-       color:white;
-       font-size: large;
-       font-weight: bolder;}
-
-nav a:hover{color:#3D0738;}
-
-nav a:active{color:##3D0738;}
-
-
-
-.navi { width:15%;
-        padding-top: 10px;
-        margin-left: 25px;	
-        border-radius: 25px;
-	      background:linear-gradient(to top, #3D0738, black);
-	      display:inline-block;
-	      text-align: center;
-        transition: ease all 0.2s;
-        padding-bottom: 7px;
-	   
-
-
-
-	    }
-
-.navi:hover{ background:linear-gradient(to top, #C00994, #B776A7);
-	         color: white;
-	         box-shadow: inset 0 0 0 3px #C1F5F0;
-             transform: scale(0.9);
-
-
-}
- 
-.navi a { display:block; }
-
-
-
-	     
-.disco { display:none;
-         position: absolute;
-         width: 85px;
-         background-color: #3D0738;
-         text-decoration: none;
-         z-index: 1200
-
-         }
-.disco a:hover{color:white;
-               background:linear-gradient(to top, #C00994, #B776A7); }
-
-.disco a:active{color:black;}
-
-.disco li {
-            margin-left: -35px;
-            margin-top: 5px;
-            text-align: left;
-             }
+.btn-outline-success { color:#5157CE;
+                       border-color: #5157CE;}
 
 
 
 
-ul .navi:hover .disco {display:block;}
-          
-.tours { display:none;
-         position: absolute;
-         width: 85px;
-         background-color: #3D0738;
-         text-decoration: none;
-         z-index: 1200
+/* -------------------------------------------------------barra de navegación---------------------------------------------------*/
 
-         }
-
-.tours li {
-            margin-left: -35px;
-            margin-top: 5px;
-            text-align: left;
-             }
-
-.tours a:hover{color:white;
-               background:linear-gradient(to top, #C00994, #B776A7); }
-
-.tours a:active{color:black;}
+.bg-light { background-color:#F5A7E0!important;}
 
 
-ul .navi:hover .tours {display:block;}
-
-/*contenido*/
+/*---------------------------------------------------------contenido HOME *------------------------------------------------------*/
 main{text-align: center;
       margin-top: 80px;
       }
+.carousel-inner {
+    margin-top: -77px;
+    margin-bottom: 10px;
+    max-height: 400px;
+
+                 }
+
+
+.hist-txt{ padding-left:5px; }
+
 #historia {
-           padding-left:65px;}
+           padding-left:65px;
+           margin-top: 15px;}
 
 .hist1 .hist2 { text-align: center;
 
@@ -180,60 +76,122 @@ article{
         vertical-align: top;
         }
 
+.hist1,.hist2 { background-color: #C3C5F8;
+                border-radius: 15px; }
 .hist1{ float: left; }
 
-.hist-img { text-align: center; }
+.hist-img { text-align: center;
+            max-width: 100%; }
 
 .hist1 .hist2 p { max-height: 400px; }
 
-/* barra de noticias*/
+/*------------------------------------------------------------- barra de noticias-------------------------------------------------*/
+
+.news_title { background-color:#F5A7E0;}
+.news_title h2 { font-size: 30px;
+                 font-weight: bolder; }
 
 
-#noticias{ margin-top:100px;}
 
-#listanews { padding-right: 40px;}
+#noticias{ margin-top:100px;
+}
+
+#listanews { padding-right: 40px;
+}
 
 .news { width:calc(20% - 25px);
 	      margin-left: 20px;
-        background-color: #3E263C;
+        background-color: #F5A7E0;
         display: inline-block;
         vertical-align: top;
-        min-height: 300px; }
+        min-height: 300px;
+        border-radius: 20px; }
 
-.news a {color: #C1F5F0;
+.news a {color: #5157CE;
          min-height: 140px;
          font-size: 24px;
          display: block;
          font-weight: bolder;
          text-decoration: none
          ;
-         padding-top: 25px;}
+         padding-top: 10px;}
 
 
-.headline { background-color: #3D0738; }
+.headline { background-color: #C3C5F8;
+            min-height: 190px; }
 
-.fotonews { background-color: #3D0738;
-            margin: auto; }
+.fotonews { background-color: #C3C5F8;
+            padding-bottom: 5px;
+          }
+.fotonews img { max-height: 190px;
+                max-width: 80% }
 
-/*discogrfia*/
-
-.disco_content { margin-top: 150px ;
-      padding-left: 200px;
-        }
-
-.disco_content ul,ol li {color: white;}
-
+/*-----------------------------------------------------------------------discogrfia----------------------------------------------------*/
+.disco_content{ margin-top: 0px; }
 
 
-/*Tours*/
+.img-disco { width:18%;
+             background-color: blue;
+             display: inline-block; 
+             min-height: 200px;
+             float: left;
+            
+           }
+.img-disco img { max-height: 200px;
+                 width: 100%;
+                  }
+
+
+
+
+.disco-info{ /*background-image: url("fotos/trama_fondo3.jpg");
+             background-size: cover;*/
+             background-color: #292B61;
+             min-height: 200px;
+             display: inline-block;
+             width:82%;
+             float: right;
+
+             
+
+            
+             }
+
+/*.disco-info p { max-height: 200px;
+                font-size: 50px;
+                font-weight: bold;
+                color: white;
+*/
+                 
+.nombre_disco p { font-size: 50px;
+                 color:white;
+                 font-weight: bolder;}
+
+.fecha p { font-size: 20px;
+         color:white;
+         font-weight: bold;
+          }
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------Tours-----------------------------------------------------*/
  
 .tpais { display: flex;
          flex-flow: row;
          flex-wrap: wrap;
-         justify-content: space-between;}
+         justify-content: space-between;
+         margin-top: -70px;}
 
 .tgaleria{
-          width:25%;
+          width:24%;
+          margin-top: 15px;
+          border-color: white;
+          border-style: solid;
+
           
           
           }
@@ -254,108 +212,170 @@ article{
 
 .lax { background-image: url("fotos/los_angeles.jpg") ;
        background-size: cover;
-       min-height: 300px;
+       min-height: 350px;
+       opacity: 0.5;
 
        }
 
+.lax:hover { opacity: 1.0; }
 
 .newy { background-image: url("fotos/ny.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
 
-
+.newy:hover { opacity: 1.0; }
 
 .tex { background-image: url("fotos/houston.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
 
-
+.tex:hover { opacity: 1.0; }
 
 .flori { background-image: url("fotos/miami.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height:350px;
+       opacity: 0.5;
        }
+
+.flori:hover { opacity: 1.0; }
 
 .tok { background-image: url("fotos/tokio.png") ;
        background-size: cover;
-       min-height: 400px;
+       min-height:350px;
+       opacity: 0.5;
        }
+
+.tok:hover { opacity: 1.0; }
 
 .shg { background-image: url("fotos/shangai.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.shg:hover { opacity: 1.0; }
+
 .seu { background-image: url("fotos/seul.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+.seu:hover { opacity: 1.0; }
 
 .sng { background-image: url("fotos/singapur.jpeg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+.sng:hover { opacity: 1.0; }
+
 .brl { background-image: url("fotos/berlin.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.brl:hover { opacity: 1.0; }
 
 .ams { background-image: url("fotos/amsterdam.jpeg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.ams:hover { opacity: 1.0; }
+
 .barc { background-image: url("fotos/barcelona.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.barc:hover { opacity: 1.0; }
+
 .par { background-image: url("fotos/paris.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.par:hover { opacity: 1.0; }
+
 .mad { background-image: url("fotos/madrid.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.mad:hover { opacity: 1.0; }
+
 .edim { background-image: url("fotos/edimburgo.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.edim:hover { opacity: 1.0; }
+
 .lon { background-image: url("fotos/londres.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.lon:hover { opacity: 1.0; }
+
 .rom { background-image: url("fotos/roma.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.rom:hover { opacity: 1.0; }
 
 .med { background-image: url("fotos/medellin.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.med:hover { opacity: 1.0; }
 
 .bsas { background-image: url("fotos/buenos.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.bsas:hover { opacity: 1.0; }
 
 .rio { background-image: url("fotos/rio.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height: 350px;
+       opacity: 0.5;
        }
+
+.rio:hover { opacity: 1.0; }
 
 .san { background-image: url("fotos/santiago.jpg") ;
        background-size: cover;
-       min-height: 400px;
+       min-height:350px;
+       opacity: 0.5;
        }
+
+.san:hover { opacity: 1.0; }
 
 
 /*footer*/
 
 footer {width:100%;
-	      min-height: 40px;
-        background-color:#3D0738;
+	      max-height: 40px;
+        background-color:#F5A7E0;
+        margin-top: 25px;
         }
 
 
@@ -365,7 +385,7 @@ footer a { text-decoration: none; }
 footer li{display:inline-block;} 
 
 footer i {font-size:35px;
-          color:grey;
+          color:#5157CE;
           margin-right: 10px;
           padding-top: 10px , 0px;}
 
@@ -376,22 +396,7 @@ footer i {font-size:35px;
 @media only screen and (max-width: 500px) 
 {
 
-img {width:100%;}
-
-.busq input[type=text]:focus {
-    width: 45%;
-}
-
-#banner {
-          display: flex;
-          flex-flow:column;
-        }
-.banner1, .banner2 { 
-                width: 90%; 
-              }
-
-.banner2 { margin-left: 45px; }
-
+/*--------------------------------------------------------Home------------------------------------------------------------------*/
 /*main*/
 
 #historia { display: flex;
@@ -402,6 +407,8 @@ img {width:100%;}
                 width: 100%; 
                 display: block;
               }
+
+
 
 
 
@@ -419,8 +426,32 @@ img {width:100%;}
          }
 
 
-}
 
+
+/*--------------------------------------------------------------Tours-----------------------------------------------------------*/
+
+.tpais { display: flex;
+         flex-flow: column;
+         flex-wrap: wrap;
+         margin-top: -70px;}
+
+
+
+
+.tgaleria{
+          width:90%;
+          margin-top: 15px;
+          margin-left: 20px;
+          border-color: white;
+          border-style: solid;
+
+          
+          
+          }
+
+
+
+}
 
 @media only screen and (max-width: 1024px) 
 
