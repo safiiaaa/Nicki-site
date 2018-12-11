@@ -1,19 +1,6 @@
-body { /*background-image: url("fotos/trama_fondo2.jpg");*/
+body { 
 	     background-color: #FAFBAC;
-       font-family: : arial;
-       display: block;
-       width: 100%;
-       }
-
-.discog { /*background-image: url("fotos/trama_fondo.jpg");*/
-          background-color: black;
-          font-family: : arial;
-          display: block;
-          width: 100%;
-       }
-.tour_banner { 
-       background-color: #2A2D88;
-       font-family: : arial;
+        font-family: 'Bungee', cursive;
        display: block;
        width: 100%;
        }
@@ -21,15 +8,15 @@ body { /*background-image: url("fotos/trama_fondo2.jpg");*/
 
 h2 { color: #5157CE;
     text-align: center;
-    font-family: arial;
-    font-size:20px;
+     font-family: 'Bungee', cursive;
+    font-size:30px;
     font-weight: bold;}
 
 p { color:#5157CE;
    font-size: 20px;
-   font-family: arial; }
+    font-family: 'Bungee', cursive; }
 
-a { font-family: arial;
+a {  font-family: 'Bungee', cursive;
     font-size: 20px;
      }
 
@@ -52,22 +39,22 @@ main{text-align: center;
       margin-top: 80px;
       }
 .carousel-inner {
-    margin-top: -77px;
+    margin-top: -80px;
     margin-bottom: 10px;
     max-height: 400px;
 
                  }
 
 
-.hist-txt{ padding-left:5px; }
+.hist-txt{ padding:10px; }
 
 #historia {
            padding-left:65px;
-           margin-top: 15px;}
+           margin-top: 150px;}
 
-.hist1 .hist2 { text-align: center;
-
-          }
+.hist1, .hist2 { 
+                background-color: #C3C5F8;
+              }
 
 article{
 	    width:45%;
@@ -76,8 +63,7 @@ article{
         vertical-align: top;
         }
 
-.hist1,.hist2 { background-color: #C3C5F8;
-                border-radius: 15px; }
+
 .hist1{ float: left; }
 
 .hist-img { text-align: center;
@@ -118,50 +104,25 @@ article{
 
 
 .headline { background-color: #C3C5F8;
-            min-height: 190px; }
+            min-height: 190px;
+            padding-left: 10px; }
 
 .fotonews { background-color: #C3C5F8;
-            padding-bottom: 5px;
+            padding-bottom: 0px;
           }
-.fotonews img { max-height: 190px;
-                max-width: 80% }
+.fotonews img { max-height: 200px;
+                width: 100% }
 
 /*-----------------------------------------------------------------------discogrfia----------------------------------------------------*/
-.disco_content{ margin-top: 0px; }
 
+.disco_content{margin-top: 10px;}
 
-.img-disco { width:18%;
+.img-disco { width:100%;
              background-color: blue;
              display: inline-block; 
-             min-height: 200px;
-             float: left;
-            
+             margin-top: -17px;
            }
-.img-disco img { max-height: 200px;
-                 width: 100%;
-                  }
 
-
-
-
-.disco-info{ /*background-image: url("fotos/trama_fondo3.jpg");
-             background-size: cover;*/
-             background-color: #292B61;
-             min-height: 200px;
-             display: inline-block;
-             width:82%;
-             float: right;
-
-             
-
-            
-             }
-
-/*.disco-info p { max-height: 200px;
-                font-size: 50px;
-                font-weight: bold;
-                color: white;
-*/
                  
 .nombre_disco p { font-size: 50px;
                  color:white;
@@ -187,21 +148,22 @@ article{
          margin-top: -70px;}
 
 .tgaleria{
+          position: relative;
           width:24%;
           margin-top: 15px;
           border-color: white;
           border-style: solid;
-
-          
-          
+          min-height: 350px; 
           }
 
 .tgaleria a {
          text-decoration: none;
          font-size: 40px;
-         color: black;
-         line-height: 400px;
+         color: white;
          display: none;
+         top: 40%;
+         position: relative;
+         
             }
 
 .tgaleria:hover a { color: white; 
@@ -209,173 +171,278 @@ article{
                    font-weight: bolder; 
                   }
 
+.tgaleria:hover .angeles { opacity: 0.6;
+}
 
-.lax { background-image: url("fotos/los_angeles.jpg") ;
+
+.angeles
+      { background-image: url("fotos/los_angeles.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
-
+       position: absolute;
+       min-height: 345px;
+       width:100%;
        }
 
-.lax:hover { opacity: 1.0; }
 
-.newy { background-image: url("fotos/ny.jpg") ;
-       background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+.newy { 
+        background-image: url("fotos/ny.jpg") ;
+        background-size: cover;
+        position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+
+.tgaleria:hover .newy { opacity: 0.6;
+                      }
 
 .newy:hover { opacity: 1.0; }
 
+
+
 .tex { background-image: url("fotos/houston.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+       min-height: 345px;
+       width:100%;
        }
+
+.tgaleria:hover .tex { opacity: 0.6;
+                     }
 
 .tex:hover { opacity: 1.0; }
 
 .flori { background-image: url("fotos/miami.jpg") ;
        background-size: cover;
-       min-height:350px;
-       opacity: 0.5;
+       position: absolute;
+       min-height: 345px;
+       width:100%;
        }
+
+.tgaleria:hover .flori { opacity: 0.6;
+                      }
 
 .flori:hover { opacity: 1.0; }
 
 .tok { background-image: url("fotos/tokio.png") ;
        background-size: cover;
-       min-height:350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+.tgaleria:hover .tok { opacity: 0.6;
+                      }
 
 .tok:hover { opacity: 1.0; }
 
 .shg { background-image: url("fotos/shangai.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
 
+.tgaleria:hover .shg { opacity: 0.6;
+                      }
 .shg:hover { opacity: 1.0; }
 
 .seu { background-image: url("fotos/seul.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+      position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+
+.tgaleria:hover .seu { opacity: 0.6;
+                      }
 .seu:hover { opacity: 1.0; }
+
 
 .sng { background-image: url("fotos/singapur.jpeg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+
+.tgaleria:hover .sng { opacity: 0.6;
+                      }
 .sng:hover { opacity: 1.0; }
 
 .brl { background-image: url("fotos/berlin.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+
+.tgaleria:hover .brl { opacity: 0.6;
+                      }
 
 .brl:hover { opacity: 1.0; }
 
 .ams { background-image: url("fotos/amsterdam.jpeg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+.tgaleria:hover .ams { opacity: 0.6;
+                      }
 
 .ams:hover { opacity: 1.0; }
 
 .barc { background-image: url("fotos/barcelona.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+
+.tgaleria:hover .barc { opacity: 0.6;
+                      }
 
 .barc:hover { opacity: 1.0; }
 
 .par { background-image: url("fotos/paris.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
 
+.tgaleria:hover .par { opacity: 0.6;
+                      }
 .par:hover { opacity: 1.0; }
+
 
 .mad { background-image: url("fotos/madrid.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
 
+.tgaleria:hover .mad { opacity: 0.6;
+                      }
 .mad:hover { opacity: 1.0; }
 
 .edim { background-image: url("fotos/edimburgo.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+
+.tgaleria:hover .edim { opacity: 0.6;
+                      }
 
 .edim:hover { opacity: 1.0; }
 
 .lon { background-image: url("fotos/londres.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+
+ .tgaleria:hover .lon { opacity: 0.6;
+                      }
 
 .lon:hover { opacity: 1.0; }
 
 .rom { background-image: url("fotos/roma.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+
+.tgaleria:hover .rom { opacity: 0.6;
+                      }
 
 .rom:hover { opacity: 1.0; }
 
-.med { background-image: url("fotos/medellin.jpg") ;
+.med { background-image: url("fotos/medellin.jpg");
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+       min-height: 345px;
+       width:100%;
        }
 
+.tgaleria:hover .med { opacity: 0.6;
+                      }
 .med:hover { opacity: 1.0; }
 
 .bsas { background-image: url("fotos/buenos.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
+
+.tgaleria:hover .bsas { opacity: 0.6;
+                      }
 
 .bsas:hover { opacity: 1.0; }
 
 .rio { background-image: url("fotos/rio.jpg") ;
        background-size: cover;
-       min-height: 350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
 
+.tgaleria:hover .rio { opacity: 0.6;
+                      }
 .rio:hover { opacity: 1.0; }
 
 .san { background-image: url("fotos/santiago.jpg") ;
        background-size: cover;
-       min-height:350px;
-       opacity: 0.5;
+       position: absolute;
+        min-height: 345px;
+        width:100%;
        }
 
+.tgaleria:hover .san { opacity: 0.6;
+                      }
+
 .san:hover { opacity: 1.0; }
+/* ------------------------------------------------------------------CONTACTO-------------------------------------------------------------*/
+.contact-headline { width: 100%;
+                    background-color:#5157CE; }
+
+.carousel-inner2 {
+
+    margin-top: -80px;  
+    margin-bottom: 10px;
+    width: 1000px;
+}  
+
+.carousel-inner2 {
+    position: relative;
+    overflow: hidden;
+    left: 15%;
+}
+
+.contact-tagline { margin:30px;
+                  }
+
+.form-contact { background-color:#C3C5F8;  }
+
+.form-check { text-align: left; }
+
+.btn-primary { margin-left: 250px;
+             }
 
 
-/*footer*/
+
+/*--------------------------------------------------------------------footer--------------------------------------------------------------*/
 
 footer {width:100%;
-	      max-height: 40px;
+	      max-height: 30px;
         background-color:#F5A7E0;
         margin-top: 25px;
+        margin-bottom: 0px;
         }
 
 
@@ -384,33 +451,39 @@ footer a { text-decoration: none; }
 
 footer li{display:inline-block;} 
 
-footer i {font-size:35px;
+footer i {font-size:25px;
           color:#5157CE;
           margin-right: 10px;
-          padding-top: 10px , 0px;}
+          padding-top: 10%x , 0px;}
+
+.media { display: inline-block; }
+
+.rights { display: inline-block;
+          max-height:20px;
+          float: right;
+         }
+
+.rights p {display: inline-block;}         
 
 
-/*mobile*/
+-/*-------------------------------------------------------------------mobile-------------------------------------------------------*/
 
 
 @media only screen and (max-width: 500px) 
 {
 
 /*--------------------------------------------------------Home------------------------------------------------------------------*/
-/*main*/
 
 #historia { display: flex;
           flex-flow: column;
-          padding-left: 2px;}
+          padding-left: 2px;
+          margin-top: -5px;}
 
 .hist1, .hist2 { 
                 width: 100%; 
                 display: block;
               }
-
-
-
-
+.hist2 { margin-top: 2px; }
 
 
 
@@ -424,6 +497,9 @@ footer i {font-size:35px;
         margin-top: 15px;
         
          }
+
+
+.headline a { font-size: 30px; }
 
 
 
@@ -449,9 +525,55 @@ footer i {font-size:35px;
           
           }
 
+/*------------------------------------------------------------Discografia -----------------------------------------------------*/
 
+.img-disco { display: block; }
+
+.disco_content{margin-top: 17px;}
+
+
+
+
+/*------------------------------------------------------------- Contact -----------------------------------------------------------*/ 
+
+.carousel-inner2 { width:100%;
+                   left:0%; }
+
+.btn-primary { margin-left: 0px;
+               width:100%;
+             }
+
+.form-row { margin:0px; }
+
+.row { margin-right:0px;
+       margin-left: 0px; }
 
 }
+
+/*-----------------------------------------------------------footer -----------------------------------------------------------*/ 
+
+footer a { text-decoration: none; }
+
+footer li{display:inline-block;} 
+
+footer i {font-size:20px;
+          color:#5157CE;
+          margin-right: 10px;
+          padding-top: 10%x , 0px;
+         margin-right: 2px;}
+
+.media { display: inline-block; }
+
+.rights { display: inline-block;
+          max-height:20px;
+          float: right;
+         }
+
+.rights p {display: inline-block;
+           font-size: 10px;}         
+
+}
+
 
 @media only screen and (max-width: 1024px) 
 
