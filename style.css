@@ -1,24 +1,28 @@
 body { 
 	     background-color: #FAFBAC;
-        font-family: 'Bungee', cursive;
+        font-family: 'Indie Flower', cursive;
        display: block;
        width: 100%;
        }
 
-
+h1 { font-size: 50px;
+     font-weight: bolder;
+      }
 h2 { color: #5157CE;
     text-align: center;
-     font-family: 'Bungee', cursive;
-    font-size:30px;
-    font-weight: bold;}
+     font-family: 'Indie Flower', cursive;
+    font-size:40px;
+    font-weight: bolder;}
 
 p { color:#5157CE;
    font-size: 20px;
-    font-family: 'Bungee', cursive; }
+   font-weight: bold;
+    font-family: 'Indie Flower', cursive; }
 
-a {  font-family: 'Bungee', cursive;
+a {  font-family: 'Indie Flower', cursive;
     font-size: 20px;
      }
+table { font-size: 24px; }
 
 
 /* botón búsqueda*/
@@ -31,7 +35,15 @@ a {  font-family: 'Bungee', cursive;
 
 /* -------------------------------------------------------barra de navegación---------------------------------------------------*/
 
-.bg-light { background-color:#F5A7E0!important;}
+.titulos {display: none;}
+.bg-light { background-color:#F5A7E0!important;
+          }
+
+.navbar-nav a { font-size: 24px;
+                font-weight: bold; }
+
+.btn-outline-success { font-size: 20px;
+                      font-weight: bold; }
 
 
 /*---------------------------------------------------------contenido HOME *------------------------------------------------------*/
@@ -73,6 +85,8 @@ article{
 
 /*------------------------------------------------------------- barra de noticias-------------------------------------------------*/
 
+
+
 .news_title { background-color:#F5A7E0;}
 .news_title h2 { font-size: 30px;
                  font-weight: bolder; }
@@ -113,34 +127,15 @@ article{
 .fotonews img { max-height: 200px;
                 width: 100% }
 
-/*-----------------------------------------------------------------------discogrfia----------------------------------------------------*/
-
-.disco_content{margin-top: 10px;}
-
-.img-disco { width:100%;
-             background-color: blue;
-             display: inline-block; 
-             margin-top: -17px;
-           }
-
-                 
-.nombre_disco p { font-size: 50px;
-                 color:white;
-                 font-weight: bolder;}
-
-.fecha p { font-size: 20px;
-         color:white;
-         font-weight: bold;
-          }
-
-
-
-
-
-
 
 /*--------------------------------------------------------------------------Tours-----------------------------------------------------*/
  
+.title-tours { width: 100%;
+               background-color:#5157CE;
+               margin-bottom: 70px; 
+              margin-top:-80px;}
+
+
 .tpais { display: flex;
          flex-flow: row;
          flex-wrap: wrap;
@@ -158,15 +153,15 @@ article{
 
 .tgaleria a {
          text-decoration: none;
-         font-size: 40px;
-         color: white;
+         font-size: 50px;
+         color: black;
          display: none;
          top: 40%;
          position: relative;
          
             }
 
-.tgaleria:hover a { color: white; 
+.tgaleria:hover a { color: black; 
                    display: block;
                    font-weight: bolder; 
                   }
@@ -408,6 +403,8 @@ article{
 
 .san:hover { opacity: 1.0; }
 /* ------------------------------------------------------------------CONTACTO-------------------------------------------------------------*/
+
+
 .contact-headline { width: 100%;
                     background-color:#5157CE; }
 
@@ -427,14 +424,20 @@ article{
 .contact-tagline { margin:30px;
                   }
 
-.form-contact { background-color:#C3C5F8;  }
+.form-contact { background-color:#C3C5F8;
+                 margin-bottom:0px;  }
 
-.form-check { text-align: left; }
+.form-check { text-align: left;
+              font-weight: 700; }
 
 .btn-primary { margin-left: 250px;
+              font-size: 30px;
+              font-weight: bold;
              }
 
-
+.row {
+    font-weight: bold;
+    font-size: 20px;}
 
 /*--------------------------------------------------------------------footer--------------------------------------------------------------*/
 
@@ -443,6 +446,7 @@ footer {width:100%;
         background-color:#F5A7E0;
         margin-top: 25px;
         margin-bottom: 0px;
+        overflow: hidden;
         }
 
 
@@ -453,7 +457,6 @@ footer li{display:inline-block;}
 
 footer i {font-size:25px;
           color:#5157CE;
-          margin-right: 10px;
           padding-top: 10%x , 0px;}
 
 .media { display: inline-block; }
@@ -466,7 +469,7 @@ footer i {font-size:25px;
 .rights p {display: inline-block;}         
 
 
--/*-------------------------------------------------------------------mobile-------------------------------------------------------*/
+/*-------------------------------------------------------------------mobile-------------------------------------------------------*/
 
 
 @media only screen and (max-width: 500px) 
@@ -530,6 +533,8 @@ footer i {font-size:25px;
 .img-disco { display: block; }
 
 .disco_content{margin-top: 17px;}
+
+.cd_discografia table { font-size: 20px; }
 
 
 
